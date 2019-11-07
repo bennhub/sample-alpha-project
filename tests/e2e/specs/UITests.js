@@ -1,8 +1,8 @@
-describe('Visit App, Get Commits List', function() {
+describe('Validates UI Functionality', function() {
   it('Gets, and asserts', function() {
     
     // Visit Root URL'
-    cy.visit('http://localhost:8080/')
+    cy.visit('baseURL')
 
     //Clicks commits to display list view
     cy.contains('Commits').click({force: true})
@@ -77,6 +77,8 @@ describe('Visit App, Get Commits List', function() {
   
     //Auth with git hub
     //cy.get('.v-btn').click()
+
+
 
     //cy.get('.login_field')
     //.type(Cypress.env('benneilson0226@gmail.com'))
