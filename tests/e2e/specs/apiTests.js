@@ -21,7 +21,7 @@ describe('API Validations Tests', () => {
               .should('equal',200);
      })
 
-     it('Validate the body and rate limit ', () => {
+     it('Validate the body and rate limit', () => {
         result = cy.request('https://api.github.com/rate_limit')
        
         result.its('body')
